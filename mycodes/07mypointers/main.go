@@ -20,7 +20,7 @@ func main() {
 	fmt.Println("Value of actual pointer is ", ptr)
 
 	fmt.Println("Value in side pointer is ", *ptr)
-	fmt.Println("Value in side pointer in other way ", *&myNumber)
+	//fmt.Println("Value in side pointer in other way only to understand ", *&myNumber)
 
 	// If you need the value inside pointer address simple add * in it
 
