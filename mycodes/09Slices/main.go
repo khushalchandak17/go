@@ -48,4 +48,14 @@ func main() {
 
 	fmt.Println(sort.IntsAreSorted(highscores))
 
+	// How to remove a value from slices based on index
+	//https://www.youtube.com/watch?v=931nR5TGCAk&list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOnBpa&index=15
+
+	var courses = []string{"rd", "ak", "qq", "99", "tt"}
+	fmt.Println(courses)
+
+	var index int = 2
+	courses = append(courses[:index], courses[index+1:]...)
+	fmt.Println(courses)
+
 }
