@@ -26,7 +26,7 @@ func main() {
 	}
 
 	fmt.Printf("Response is of type %T\n", response)
-	fmt.Println(response)
+	//fmt.Println(response)
 	defer response.Body.Close() // callers responsibility to close the connection
 
 	databyte, err := ioutil.ReadAll(response.Body)
